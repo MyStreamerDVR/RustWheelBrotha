@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Di Real Truth 'Bout Di Rust Wheel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .title-font {
+            font-family: 'Bangers', cursive;
+        }
+        .card-bg {
+            background-color: #1A1A1A;
+        }
+        .jamaican-gradient-text {
+            background: linear-gradient(to right, #009B3A, #FCD116, #000000, #CE1126);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .rust-wheel-svg {
+            animation: slow-spin 20s linear infinite;
+        }
+        @keyframes slow-spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body class="bg-black text-white p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto">
+
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="title-font text-5xl sm:text-7xl text-yellow-400 tracking-wider">Why Yuh Cyaan Outsmart Di Rust Wheel, Mon!</h1>
+            <p class="text-gray-400 mt-2">A Reasoning Session For Every Gambla</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="space-y-8">
+
+            <!-- Intro Card -->
+            <div class="card-bg border-2 border-yellow-400 rounded-lg p-6 shadow-lg shadow-yellow-400/20">
+                <h2 class="title-font text-4xl text-green-500 mb-3">Greetings, Bredda!</h2>
+                <p class="text-lg">
+                    Pull up a chair. Yuh wah know di secret to di wheel? Yuh tink it's a puzzle yuh can solve? Mek we reason 'bout dis ting properly. Di truth is, trying to predict dat wheel is like tryin' to catch a likkle hummingbird wid chopsticks. It look possible if yuh squint, but it nah go happen!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- The Analogy -->
+                <div class="card-bg border-2 border-red-600 rounded-lg p-6 shadow-lg shadow-red-600/20">
+                    <h2 class="title-font text-4xl text-yellow-400 mb-3">Di Secret Recipe</h2>
+                    <p class="mb-4">
+                        Tink of di Rust server like a world-famous chef who have a secret recipe for jerk chicken.
+                    </p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong class="text-green-500">Di Algorithm:</strong> Dis is di recipe itself. How much pepper, how much pimento, how long it cook. Only di chef know di exact mix.</li>
+                        <li><strong class="text-yellow-400">Di Seed:</strong> Dis is di secret ingredient! Maybe it's a special mango from a tree only di chef know 'bout. Every day him use a different one. Dis seed mek every batch of chicken unique.</li>
+                    </ul>
+                    <p class="mt-4">
+                        Di wheel is di same ting, mon! It use a recipe (algorithm) and a secret ingredient (a random seed) dat changes constantly. Yuh can watch di chef cook all day, but yuh will never guess di secret ingredient.
+                    </p>
+                </div>
+
+                <!-- SVG Wheel -->
+                <div class="flex justify-center items-center p-4">
+                    <svg class="rust-wheel-svg w-64 h-64" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <path id="sectorPath" d="M 100 100 L 100 10 A 90 90 0 0 1 163.64 40.0 Z"/>
+                        </defs>
+                        <!-- The 20 -->
+                        <use href="#sectorPath" fill="#FCD116" transform="rotate(0, 100, 100)"/>
+                        <!-- The 10s -->
+                        <use href="#sectorPath" fill="#CE1126" transform="rotate(15, 100, 100)"/>
+                        <use href="#sectorPath" fill="#CE1126" transform="rotate(30, 100, 100)"/>
+                        <!-- The 5s -->
+                        <use href="#sectorPath" fill="#009B3A" transform="rotate(45, 100, 100)"/>
+                        <use href="#sectorPath" fill="#009B3A" transform="rotate(60, 100, 100)"/>
+                        <use href="#sectorPath" fill="#009B3A" transform="rotate(75, 100, 100)"/>
+                        <use href="#sectorPath" fill="#009B3A" transform="rotate(90, 100, 100)"/>
+                        <!-- The 3s -->
+                        <use href="#sectorPath" fill="#1A1A1A" stroke="gray" stroke-width="1" transform="rotate(105, 100, 100)"/>
+                        <use href="#sectorPath" fill="#1A1A1A" stroke="gray" stroke-width="1" transform="rotate(120, 100, 100)"/>
+                        <use href="#sectorPath" fill="#1A1A1A" stroke="gray" stroke-width="1" transform="rotate(135, 100, 100)"/>
+                        <use href="#sectorPath" fill="#1A1A1A" stroke="gray" stroke-width="1" transform="rotate(150, 100, 100)"/>
+                        <use href="#sectorPath" fill="#1A1A1A" stroke="gray" stroke-width="1" transform="rotate(165, 100, 100)"/>
+                        <!-- The 1s -->
+                        <use href="#sectorPath" fill="gray" transform="rotate(180, 100, 100)"/>
+                        <use href="#sectorPath" fill="gray" transform="rotate(195, 100, 100)"/>
+                        <use href="#sectorPath" fill="gray" transform="rotate(210, 100, 100)"/>
+                        <use href="#sectorPath" fill="gray" transform="rotate(225, 100, 100)"/>
+                        <use href="#sectorPath" fill="gray" transform="rotate(240, 100, 100)"/>
+                        <use href="#sectorPath" fill="gray" transform="rotate(255, 100, 100)"/>
+                        <use href="#sectorPath" fill="gray" transform="rotate(270, 100, 100)"/>
+                        <use href="#sectorPath" fill="gray" transform="rotate(285, 100, 100)"/>
+                        <use href="#sectorPath" fill="gray" transform="rotate(300, 100, 100)"/>
+                        <use href="#sectorPath" fill="gray" transform="rotate(315, 100, 100)"/>
+                        <use href="#sectorPath" fill="gray" transform="rotate(330, 100, 100)"/>
+                        <use href="#sectorPath" fill="gray" transform="rotate(345, 100, 100)"/>
+                        <circle cx="100" cy="100" r="15" fill="#1A1A1A" stroke="#FCD116" stroke-width="2"/>
+                        <!-- Pointer -->
+                        <path d="M 95 0 L 105 0 L 100 20 Z" fill="#CE1126"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Warning Card -->
+            <div class="card-bg border-2 border-green-500 rounded-lg p-6 shadow-lg shadow-green-500/20">
+                <h2 class="title-font text-4xl text-red-600 mb-3">So Why Yuh Cyaan Beat It?</h2>
+                <p class="text-lg">
+                    Because di whole operation happens pon di **SERVER**, not your PC. It's locked down tighter than a drum. Trying to get dat seed from di server is like trying to steal a raindrop from a hurricane. Di server decide di number in secret, den it just send yuh di result. Yuh only see di wheel spin for show! It's a pretty animation, dat's all.
+                </p>
+            </div>
+
+            <!-- Final Word -->
+            <div class="text-center mt-10 p-4 border-4 border-dashed border-yellow-400 rounded-lg">
+                <h3 class="title-font text-5xl jamaican-gradient-text mb-2">DI FINAL WORD!</h3>
+                <p class="text-xl font-bold">
+                    Anybaddi who tell yuh dem have di "winning numbas" or a "prediction program" is a real <strong class="text-red-600">SCAMMAZ</strong>! Dem will tek yuh scrap, yuh items, and yuh dignity! Don't be a fool, mon. Play for fun, not to get rich.
+                </p>
+                <p class="text-gray-400 mt-2">Gwaan play safe, and respect di game.</p>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
